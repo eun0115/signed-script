@@ -7,14 +7,6 @@ subject='/C=PH/ST=Philippines/L=Manila/O=eun0115/OU=eun0115/CN=eun0115/emailAddr
 echo "Using Subject Line:"
 echo "$subject"
 
-# Check the user's response
-if [[ $confirmation != "y" && $confirmation != "Y" ]]; then
-    echo "Exiting without changes."
-    exit 1
-fi
-clear
-
-
 # Create Key
 echo "Press ENTER TWICE to skip password (about 10-15 enter hits total). Cannot use a password for inline signing!"
 mkdir ~/.android-certs
