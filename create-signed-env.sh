@@ -1,23 +1,11 @@
 #!/bin/bash
 
-# Prompt the user for each part of the subject line
-read -p "Enter country code 'US' (C): " country
-read -p "Enter state or province name 'California' (ST): " state
-read -p "Enter locality 'Los Angeles' (L): " locality
-read -p "Enter organization name 'crDroid' (O): " organization
-read -p "Enter organizational unit 'crDroid' (OU): " organizational_unit
-read -p "Enter common name 'crdroid' (CN): " common_name
-read -p "Enter email address 'android@android.com' (emailAddress): " email
-
 # Construct the subject line
-subject="/C=${country}/ST=${state}/L=${locality}/O=${organization}/OU=${organizational_unit}/CN=${common_name}/emailAddress=${email}"
+subject='/C=PH/ST=Philippines/L=Manila/O=eun0115/OU=eun0115/CN=eun0115/emailAddress=gianpaoloestacio5@gmail.com' 
 
 # Print the subject line
 echo "Using Subject Line:"
 echo "$subject"
-
-# Prompt the user to verify if the subject line is correct
-read -p "Is the subject line correct? (y/n): " confirmation
 
 # Check the user's response
 if [[ $confirmation != "y" && $confirmation != "Y" ]]; then
